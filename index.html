@@ -16,7 +16,7 @@
 
 
 <style>
-
+#tytul {display:inline-block; margin:5px; color:darkred; font-weight:bold; font-family:Arial;}
 </style>
 <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 <script type="text/javascript" charset="utf-8" src="kapiszon.js"></script>
@@ -25,11 +25,19 @@
 
 
 <script>
-var autorzy=['2012_woltman_balustrady/','2012_andala_wejscie','2012_marczukiewicz_lungomare'];
+//var autorzy=['galeria111','2012_woltman_balustrady/','2012_andala_wejscie','2012_marczukiewicz_lungomare'];
+var autorzy=[
+{title:'Galeria111.pl', path:'galeria111'},
+{title:'Maciej Woltman - 2012 Balustrady', path:'2012_woltman_balustrady'},
+{title:'Marek Andala - 2012 Wejście', path:'2012_andala_wejscie'},
+{title:'Adam Marczukiewicz - 2012 Lungomare', path:'2012_marczukiewicz_lungomare'}
+];
 
+/*
 function getPath(){
 	return window.localStorage.getItem('myimagesPath') || "2012_woltman_balustrady/";
 	}
+*/
 	
 function menu(id){
 	window.localStorage.setItem('id',id);
@@ -61,11 +69,12 @@ function menu(id){
 </script>
 </head>
 <body>
-<div id="tytul"></div>
+
 <div id="menu">
-<button class="btn btn-info" onClick="menu(0,'2012_woltman_balustrady','Maciej Woltman - Balustrady')"> Balustrady</button>
-<button class="btn btn-info" onClick="menu(1,'2012_andala_wejscie','Marek Andała - Wejście')"> Wejście</button>
-<button class="btn btn-info" onClick="menu(2,'2012_marczukiewicz_lungomare','Adam Marczukiewicz - Lungomare')">Lungomare</button>
+<button class="btn btn-info" onClick="menu(1,'2012_woltman_balustrady','Maciej Woltman - Balustrady')"> Balustrady</button>
+<button class="btn btn-info" onClick="menu(2,'2012_andala_wejscie','Marek Andała - Wejście')"> Wejście</button>
+<button class="btn btn-info" onClick="menu(3,'2012_marczukiewicz_lungomare','Adam Marczukiewicz - Lungomare')">Lungomare</button>
+<div id="tytul"></div>
 </div>
 <div id="strona">
 <canvas id="canvas">Your browser does not support the HTML5 canvas element</canvas>
@@ -82,10 +91,13 @@ function menu(id){
 <script>
 
 (function(){
-
-var id=window.localStorage.getItem('id') || 0;
-var autor=autorzy[id];
-$('#tytul').innerText=autor;
+//console.log(autorzy);
+var id=window.localStorage.getItem('id') || 1;
+var autor=autorzy[id].path;
+var tytul=autorzy[id].title;
+//console.log(autor+' '+tytul);
+$('#tytul').innerHTML=tytul;
+document.title =tytul;
 
 script=document.createElement('SCRIPT');
 script.type='text/javascript';
