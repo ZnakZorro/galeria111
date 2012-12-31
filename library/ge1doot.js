@@ -14,6 +14,7 @@ var ge1doot = ge1doot || {
 	pointer: null,
 	camera: null,
 	loadJS: function (url, callback, data) {
+	
 		if (typeof url == "string") url = [url];
 		var load = function (src) {
 			var script = document.createElement("script");
@@ -34,6 +35,7 @@ var ge1doot = ge1doot || {
 				script.src = src;
 				document.getElementsByTagName("head")[0].appendChild(script);
 		}
+		//console.log(url);
 		for (var i = 0, n = url.length; i < n; i++) load(url[i]);
 	}
 }

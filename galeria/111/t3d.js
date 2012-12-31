@@ -13,7 +13,7 @@
  * ===============================================================
  */
 
-"use strict";
+
 
 (function () {
 	/* ==== definitions ==== */
@@ -228,16 +228,17 @@
 		} else this.visible = false;
 		return true;
 	}
-	return {
+	return	{ 
+	
+	
+	
 		// --- load data ----
 		load : function (data) {
 			window.addEventListener('load', function () {
-				ge1doot.loadJS(
-					"library/imageTransform3D.js",
-					init, data
-				);
+				ge1doot.loadJS("library/imageTransform3D.js",init, data);
 			}, false);
 		}
+		
 	}
 })().load({
 	imgdata:[

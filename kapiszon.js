@@ -27,8 +27,6 @@ var $=function parseJSON(id) {
 	
 	
 	
-function zapal(){$("#strona").style.opacity='1.0';}	
-function zgas() {$("#strona").style.opacity='0.7';}	
 
 function koniec(){
 	try  {navigator.app.exitApp();}
@@ -38,10 +36,16 @@ function koniec(){
 	
 }
 
+/*
 function loadURL(url){
 	try  { navigator.app.loadUrl(url, { openExternal:true } );  }
 	catch(err) {
 	  window.location.href=url;
 	  }
 }
+
+function zapal(){$("#strona").style.opacity='1.0';}	
+function zgas() {$("#strona").style.opacity='0.7';}	
+
+*/
 	
