@@ -1,0 +1,125 @@
+/* dhteumeuleu.com nav icons - last modified 27 Nov 2012 */
+.title {
+	position:fixed;
+	top:10px;
+	left:65px;
+	font-family: "Segoe UI Light", "Open Sans", Verdana, Helvetica, sans-serif;
+	color: #fff;
+	font-size:24px;
+	font-weight:normal;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select: none;
+	margin:0;
+	padding:0;
+	cursor:default;
+}
+#menu {
+	position: fixed;
+	left: 0;
+	top: 0;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	font-family: "Segoe UI Light", "Open Sans", Verdana, Helvetica, sans-serif;
+	color: #fff;
+	font-size:1em;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select: none;
+}
+#menu li {
+	position:relative;
+	list-style:none;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	background-color: #222;
+	border-radius: 6px 0 0 0;
+}
+#menu a {
+	position:absolute;
+	width:40px;
+	height:40px;
+	overflow:hidden;
+	line-height: 0; 
+    font-size: 0;
+    color: transparent;
+	text-indent:-9999px;
+}
+/* ---------------------------------------------------------
+PURE CSS GUI ICONS by Nicolas Gallagher
+@ http://nicolasgallagher.com/pure-css-gui-icons/
+----------------------------------------------------------- */
+#menu li:before,
+#menu li:after,
+#menu li a:before,
+#menu li a:after {
+	content:"";
+	position:absolute;
+	top:50%;
+	margin-left:10px;
+}
+#menu .home {
+	background:#FF9000;
+}
+#menu .home a:before {
+	left:2px;
+	border-style:solid;
+	border-color:transparent;
+	border-width:8px 7px;
+	border-bottom-color:#fff;
+	margin-top:-16px;
+}
+#menu .home a:after {
+	left:4px;
+	width:2px;
+	height:4px;
+	border-style:solid;
+	border-color:#fff #fff transparent;
+	border-width:3px 4px 0;
+	margin-top:0;
+}
+#menu .arrow a:before {
+	left:10px;
+	border-width:7px 0 7px 8px;
+	border-style:solid;
+	border-color:transparent #fff;
+	margin-top:-7px;
+}
+#menu .arrow a:after {
+	left:2px;
+	width:8px;
+	height:6px;
+	margin-top:-3px;
+	background:#fff;
+}
+#menu .arrow.back a:before {
+	left:0;
+	border-width:7px 8px 7px 0;
+}
+#menu .arrow.back a:after {
+	left:8px;
+}
+#menu .search a:before {
+	left:2px;
+	width:6px;
+	height:6px;
+	margin-top:-8px;
+	border:3px solid #fff;
+	background:transparent;
+	border-radius:12px;
+}
+#menu .search a:after {
+	left:13px;
+	width:3px;
+	height:8px;
+	margin-top:0;
+	background:#fff;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}

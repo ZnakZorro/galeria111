@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="Author" content="Gerard Ferrandez at http://www.dhteumeuleu.com/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="HandheldFriendly" content="true">
+<meta name="description" content="Balustrady - HTML5 CANVAS 3D demo">
+
+<link rel="stylesheet" href="css/t3d.css">
+<link rel="stylesheet" href="css/bootstrap.mi.css">
+
+<link rel="shortcut icon" href="favicon.ico"/>
+<title>Maciej Woltman - Balustrady</title>
+
+
+<style>
+
+</style>
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+<script type="text/javascript" charset="utf-8" src="kapiszon.js"></script>
+
+<script src="library/ge1doot.js"></script>
+
+
+<script>
+var autorzy=['2012_woltman_balustrady/','2012_andala_wejscie','2012_marczukiewicz_lungomare'];
+
+function getPath(){
+	return window.localStorage.getItem('myimagesPath') || "2012_woltman_balustrady/";
+	}
+	
+function menu(id){
+	window.localStorage.setItem('id',id);
+	window.location.reload();
+}
+
+
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+		onDeviceReady();	
+	}
+	
+	function onDeviceReady() {
+		document.addEventListener("backbutton", onBackKeyDown, false);
+		document.addEventListener("menubutton", onMenuKeyDown, false);	
+	}
+	
+	function onBackKeyDown() {
+		koniec();
+    }
+	
+	function onMenuKeyDown() {
+		if (menuOpen) {$("#menu").style.display="none"; zapal();menuOpen=false;}
+		else          {$("#menu").style.display="block"; zapal();menuOpen=true;}
+		//window.scrollTo(0,0);
+    }	
+		
+	
+</script>
+</head>
+<body>
+<div id="tytul"></div>
+<div id="menu">
+<button class="btn btn-info" onClick="menu(0,'2012_woltman_balustrady','Maciej Woltman - Balustrady')"> Balustrady</button>
+<button class="btn btn-info" onClick="menu(1,'2012_andala_wejscie','Marek Andała - Wejście')"> Wejście</button>
+<button class="btn btn-info" onClick="menu(2,'2012_marczukiewicz_lungomare','Adam Marczukiewicz - Lungomare')">Lungomare</button>
+</div>
+<div id="strona">
+<canvas id="canvas">Your browser does not support the HTML5 canvas element</canvas>
+</div>
+
+
+<!-- dhteumeuleu nav menu >
+<h1 class="title">In Second Lives</h1>
+<ul id="menu">
+	<li class="home"><a href="/index">Home</a></li>
+	<li class="search"><a href="/in-second-lives/source">source code</a></li>
+</ul>
+<end of dhteumeuleu nav menu -->
+<script>
+
+(function(){
+
+var id=window.localStorage.getItem('id') || 0;
+var autor=autorzy[id];
+$('#tytul').innerText=autor;
+
+script=document.createElement('SCRIPT');
+script.type='text/javascript';
+script.src=autor+'/t3d.js';
+document.getElementsByTagName('head')[0].appendChild(script);
+})();  
+
+</script>
+<small>Powered by: Gerard Ferrandez at www.dhteumeuleu.com</small>
+</body>
+</html>

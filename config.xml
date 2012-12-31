@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.galeria111"
+        versionCode="10" 
+        version   = "0.0.1">
+
+
+    <name>Galeria 111</name>
+
+    <description>
+        Galeria 111 
+    </description>
+
+    <author href="http://wi.zut.edu.pl" email="zs@g.pl">
+        ZnakZorro
+    </author>
+    <preference name="phonegap-version" value="2.2.0" />
+    <preference name="orientation"      value="default" />
+    <preference name="target-device"    value="universal" />
+    <preference name="fullscreen"       value="false" />
+	
+<icon src="pliki/icon-72.png" />
+<icon src="pliki/icon-36.png" gap:platform="android" gap:density="ldpi" />
+<icon src="pliki/icon-72.png" gap:platform="android" gap:density="mdpi" />
+<icon src="pliki/icon-144.png" gap:platform="android" gap:density="hdpi" />
+<icon src="pliki/icon-144.png" gap:platform="android" gap:density="xhdpi" />
+
+    <gap:splash src="pliki/iconx.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="pliki/iconx.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="pliki/iconx.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="pliki/iconxx.png" gap:platform="android" gap:density="xhdpi" />
+
+
+
+
+<access origin="*" onlyInBrowser="true" />
+<preference name="stay-in-webview" value="false" />
+
+
+</widget>
