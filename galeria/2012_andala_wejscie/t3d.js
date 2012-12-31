@@ -242,21 +242,21 @@
 })().load({
 	imgdata:[
 		// north
-		{img:'w-001.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
-		{img:'w-002.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
-		{img:'w-003.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
+		{img:'2012_Marek_Andala_G111-001.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
+		{img:'2012_Marek_Andala_G111-002.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
+		{img:'2012_Marek_Andala_G111-003.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
 		// east
-		{img:'w-004.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
-		{img:'w-005.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
-		{img:'w-006.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
+		{img:'2012_Marek_Andala_G111-004.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
+		{img:'2012_Marek_Andala_G111-005.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
+		{img:'2012_Marek_Andala_G111-006.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
 		// south
-		{img:'w-007.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
-		{img:'w-008.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
-		{img:'w-009.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
+		{img:'2012_Marek_Andala_G111-007.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
+		{img:'2012_Marek_Andala_G111-008.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
+		{img:'2012_Marek_Andala_G111-009.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
 		// west
-		{img:'w-010.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
-		{img:'w-011.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
-		{img:'w-012.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
+		{img:'2012_Marek_Andala_G111-010.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
+		{img:'2012_Marek_Andala_G111-011.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
+		{img:'2012_Marek_Andala_G111-012.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
 	],
 	structure:[
 		{
@@ -348,7 +348,8 @@
 		}
 	],
 	options:{
-		imagesPath:"2012_woltman_balustrady/"
+		imagesPath: "galeria/2012_andala_wejscie/"
+		
 	}
 });
 

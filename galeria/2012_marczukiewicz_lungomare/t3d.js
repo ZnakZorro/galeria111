@@ -242,21 +242,21 @@
 })().load({
 	imgdata:[
 		// north
-		{img:'2012_Marek_Andala_G111-001.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
-		{img:'2012_Marek_Andala_G111-002.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
-		{img:'2012_Marek_Andala_G111-003.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
+		{img:'Marczukiewicz_Galeria111-001.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
+		{img:'Marczukiewicz_Galeria111-002.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
+		{img:'Marczukiewicz_Galeria111-003.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
 		// east
-		{img:'2012_Marek_Andala_G111-004.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
-		{img:'2012_Marek_Andala_G111-005.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
-		{img:'2012_Marek_Andala_G111-006.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
+		{img:'Marczukiewicz_Galeria111-006.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
+		{img:'Marczukiewicz_Galeria111-007.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
+		{img:'Marczukiewicz_Galeria111-008.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
 		// south
-		{img:'2012_Marek_Andala_G111-007.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
-		{img:'2012_Marek_Andala_G111-008.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
-		{img:'2012_Marek_Andala_G111-009.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
+		{img:'Marczukiewicz_Galeria111-009.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
+		{img:'Marczukiewicz_Galeria111-010.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
+		{img:'Marczukiewicz_Galeria111-011.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
 		// west
-		{img:'2012_Marek_Andala_G111-010.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
-		{img:'2012_Marek_Andala_G111-011.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
-		{img:'2012_Marek_Andala_G111-012.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
+		{img:'Marczukiewicz_Galeria111-012.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
+		{img:'Marczukiewicz_Galeria111-013.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
+		{img:'Marczukiewicz_Galeria111-014.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
 	],
 	structure:[
 		{
@@ -348,8 +348,7 @@
 		}
 	],
 	options:{
-		imagesPath: "2012_andala_wejscie/"
-		
+		imagesPath:"galeria/2012_marczukiewicz_lungomare/"
 	}
 });
 
