@@ -16,13 +16,12 @@
 
 
 <style>
-#tytul {display:inline-block; margin:5px; color:darkred; font-weight:bold; font-family:Arial;}
+
 </style>
 <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 <script type="text/javascript" charset="utf-8" src="kapiszon.js"></script>
 
 <script type="text/javascript" charset="utf-8" src="library/ge1doot.js"></script>
-<script type="text/javascript" charset="utf-8" src="library/imageTransform3D.js"></script>
 
 
 <script>
@@ -70,8 +69,8 @@ function menu(id){
     }
 	
 	function onMenuKeyDown() {
-		if (menuOpen) {$("#menu").style.display="none"; zapal();menuOpen=false;}
-		else          {$("#menu").style.display="block"; zapal();menuOpen=true;}
+		if (menuOpen) {$("#menu").style.display="none"; menuOpen=false;}
+		else          {$("#menu").style.display="block"; menuOpen=true;}
 		//window.scrollTo(0,0);
     }	
 		
@@ -79,7 +78,7 @@ function menu(id){
 </script>
 </head>
 <body onload="onLoad()">
-<!--button class="btn btn-inverse" onClick="onMenuKeyDown()">Menu</button-->
+<button class="btn btn-inverse" onClick="onMenuKeyDown()" style="position:absolute; right:0; top:0px;z-index: 4;">Menu</button>
 <div id="menu">
 
 

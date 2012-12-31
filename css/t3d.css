@@ -20,3 +20,6 @@ body {
 .title {
 	color:#333 !important;
 }
+
+#tytul {display:inline-block; margin:5px; color:darkred; font-weight:bold; font-family:Arial;}
+#menu {z-index:4; position:absolute; top:0; left:0;}

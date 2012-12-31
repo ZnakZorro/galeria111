@@ -25,6 +25,8 @@ var $=function parseJSON(id) {
 	
 	
 	
+function zapal(){$("#strona").style.opacity='1.0';}	
+function zgas() {$("#strona").style.opacity='0.7';}	
 	
 	
 
@@ -44,8 +46,6 @@ function loadURL(url){
 	  }
 }
 
-function zapal(){$("#strona").style.opacity='1.0';}	
-function zgas() {$("#strona").style.opacity='0.7';}	
 
 */
 	
