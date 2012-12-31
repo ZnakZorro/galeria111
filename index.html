@@ -34,6 +34,7 @@ var autorzy=[
 {title:'Stanisław Mazuś - 2012 W obronie piękna', path:'2012_mazus_w_obronie_piekna'},
 {title:'Halina Nowicka', path:'nowicka'},
 {title:'Agata Rozciecha', path:'rozciecha'},
+{title:'Maciej Woltman - 2007', path:'2007_woltman'},
 
 ];
 /*
@@ -42,7 +43,7 @@ var autorzy=[
 {title:'', path:''},
 {title:'', path:''},
 */
-var menuOpen=true;
+var menuOpen=false;
 
 /*
 function getPath(){
@@ -86,7 +87,7 @@ function menu(id){
 </head>
 <body onload="onLoad()">
 <!--button class="btn btn-inverse" onClick="onMenuKeyDown()" style="position:absolute; right:0; top:0px;z-index: 4;">Menu</button-->
-<div id="menu">
+<div id="menu" style="display:none;">
 
 
 <button class="btn btn-primary" onClick="menu(0)">111</button>
@@ -96,6 +97,8 @@ function menu(id){
 <button class="btn btn-info" onClick="menu(4)">W obronie piękna</button>
 <button class="btn btn-info" onClick="menu(5)">Halina Nowicka</button>
 <button class="btn btn-info" onClick="menu(6)">Agata Rozciecha</button>
+<button class="btn btn-info" onClick="menu(7)">Maciej Woltman</button>
+
 <button onClick="koniec();"     class="btn btn-danger">Koniec</button>
 <div id="tytul"></div>
 </div>
