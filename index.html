@@ -32,9 +32,16 @@ var autorzy=[
 {title:'Marek Andala - 2012 Wejście', path:'2012_andala_wejscie'},
 {title:'Adam Marczukiewicz - 2012 Lungomare', path:'2012_marczukiewicz_lungomare'},
 {title:'Stanisław Mazuś - 2012 W obronie piękna', path:'2012_mazus_w_obronie_piekna'},
+{title:'Halina Nowicka', path:'nowicka'},
+{title:'Agata Rozciecha', path:'rozciecha'},
 
 ];
-
+/*
+{title:'', path:''},
+{title:'', path:''},
+{title:'', path:''},
+{title:'', path:''},
+*/
 var menuOpen=true;
 
 /*
@@ -78,15 +85,17 @@ function menu(id){
 </script>
 </head>
 <body onload="onLoad()">
-<button class="btn btn-inverse" onClick="onMenuKeyDown()" style="position:absolute; right:0; top:0px;z-index: 4;">Menu</button>
+<!--button class="btn btn-inverse" onClick="onMenuKeyDown()" style="position:absolute; right:0; top:0px;z-index: 4;">Menu</button-->
 <div id="menu">
 
 
 <button class="btn btn-primary" onClick="menu(0)">111</button>
-<button class="btn btn-info" onClick="menu(1,'2012_woltman_balustrady','Maciej Woltman - Balustrady')">Balustrady</button>
-<button class="btn btn-info" onClick="menu(2,'2012_andala_wejscie','Marek Andała - Wejście')">Wejście</button>
-<button class="btn btn-info" onClick="menu(3,'2012_marczukiewicz_lungomare','Adam Marczukiewicz - Lungomare')">Lungomare</button>
-<button class="btn btn-info" onClick="menu(4,'2012_mazus_w_obronie_piekna','Stanisław Mazuś - W obronie piękna')">W obronie piękna</button>
+<button class="btn btn-info" onClick="menu(1)">Balustrady</button>
+<button class="btn btn-info" onClick="menu(2)">Wejście</button>
+<button class="btn btn-info" onClick="menu(3)">Lungomare</button>
+<button class="btn btn-info" onClick="menu(4)">W obronie piękna</button>
+<button class="btn btn-info" onClick="menu(5)">Halina Nowicka</button>
+<button class="btn btn-info" onClick="menu(6)">Agata Rozciecha</button>
 <button onClick="koniec();"     class="btn btn-danger">Koniec</button>
 <div id="tytul"></div>
 </div>
