@@ -29,14 +29,14 @@ function zapal(){$("#strona").style.opacity='1.0';}
 function zgas() {$("#strona").style.opacity='0.7';}	
 	
 	
-
 function koniec(){
 	try  {navigator.app.exitApp();}
 	catch(err) {
-	  window.scrollTo(0,0);
+	  //window.scrollTo(0,0);
 	  }
-	
 }
+	
+
 
 /*
 function loadURL(url){
