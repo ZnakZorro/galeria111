@@ -15,6 +15,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.btn-line-left ,.btn-line-right {position:absolute; z-index:2; bottom:0; line-height: 10px;}
+.btn-line-left ,.btn-line-right {position:absolute; z-index:2; bottom:0; line-height: 10px; opacity:0.75;}
 .btn-line-left   {left:0;}
 .btn-line-right {right:0;}
