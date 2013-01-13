@@ -76,8 +76,8 @@ function menu(id){
 	}
 	
 	function onBackKeyDown() {
-	gonext();
-		//koniec();
+		//goback();
+		koniec();
     }
 	
 	function onMenuKeyDown() {
@@ -90,12 +90,16 @@ function menu(id){
 		var idmax=autorzy.length;
 		var id=window.localStorage.getItem('id') || 0;
 		id++;
-		//console.log(id+' '+idmax)
 		if (id>=idmax) id=0;
-		//zapiszID(id);
 		menu(id);
 	}		
-	
+   	function goback() {
+		var idmax=autorzy.length;
+		var id=window.localStorage.getItem('id') || 0;
+		id--;
+		if (id<0) id=idmax-1;
+		menu(id);
+	}		
 </script>
 </head>
 <body onload="onLoad()">
@@ -121,6 +125,9 @@ function menu(id){
 <div id="strona">
 <canvas id="canvas">Your browser does not support the HTML5 canvas element</canvas>
 </div>
+
+ 	<button onClick="goback();"  class="btn btn-line-left" style="float:left;"><img src="pliki/arr-left.png" /></button>
+ 	<button onClick="gonext();"  class="btn btn-line-right" style="float:right;"><img src="pliki/arr-right.png" /></button> 
 
 
 <!-- dhteumeuleu nav menu >
