@@ -8,9 +8,6 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
- a { color: #0000; text-decoration:none; }
- 
- 
 .close {
   float: right;
   font-size: 20px;
@@ -226,8 +223,8 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #004;
- 
+  background-color: #0044cc;
+  *background-color: #003bb3;
 }
 
 .btn-primary:active,
@@ -354,8 +351,8 @@ input[type="button"].btn-block {
 .btn-info.disabled,
 .btn-info[disabled] {
   color: #ffffff;
-  background-color: #026;
- 
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
 }
 
 .btn-info:active,
@@ -707,4 +704,3 @@ input[type="submit"].btn.btn-mini {
      -moz-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
 }
-

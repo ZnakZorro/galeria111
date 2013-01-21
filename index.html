@@ -73,6 +73,12 @@ function menu(id){
 		var btns=$('.btn');
 		btns[id].className+=' active';
 		
+		var html='';
+		for (var m in autorzy){
+			html+='<a href="galeria/'+autorzy[m].path+'/index.html" class="btn">'+autorzy[m].title+'</a>';
+		}
+		$('#menuabs').innerHTML=html;
+		
 	}
 	
 	function onBackKeyDown() {
@@ -118,13 +124,16 @@ function menu(id){
 	<button class="btn btn-info" onClick="menu(5)">Oktawa</button>
 	<button class="btn btn-info" onClick="menu(6)">Kadry samotności</button>
 	<button class="btn btn-gray" onClick="menu(7)">Drugi człowiek</button>
-
 	<button onClick="koniec();"     class="btn btn-danger">Koniec</button>
+	<div id="menuabs"></div>
 </div>
 
 <div id="strona">
 <canvas id="canvas">Your browser does not support the HTML5 canvas element</canvas>
 </div>
+
+<button onClick="onMenuKeyDown()" class="btn" style="position:fixed; top:1px; right:1px;">Menu</button>
+
 
  	<button onClick="goback();"  class="btn btn-line-left" style="float:left;"><img src="pliki/arr-left.png" /></button>
  	<button onClick="gonext();"  class="btn btn-line-right" style="float:right;"><img src="pliki/arr-right.png" /></button> 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PhotoSwipe</title>
+	<meta name="author" content="Ste Brennan - Code Computerlove - http://www.codecomputerlove.com/" />
+	<link href="../../swipe/styles.css" type="text/css" rel="stylesheet" />
+	
+	<link href="../../swipe/photoswipe.css" type="text/css" rel="stylesheet" />
+	
+<style>
+
+</style>	
+	
+	<script type="text/javascript" src="../../swipe/klass.min.js"></script>
+	<script type="text/javascript" src="../../swipe/code.photoswipe-3.0.5.min.js"></script>
+	
+	
+	<script type="text/javascript">
+
+		(function(window, PhotoSwipe){
+		
+			document.addEventListener('DOMContentLoaded', function(){
+			
+				var
+					options = {},
+					instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), options );
+			
+			}, false);
+			
+			
+		}(window, window.Code.PhotoSwipe));
+		
+	</script>
+	
+</head>
+<body>
+
+
+<div id="MainContent">
+
+	
+	<ul id="Gallery" class="gallery">	
+		<li><a href="i-001.jpg"><span><img src="i-001.jpg" alt="Galeria 111" /></span></a></li>
+		<li><a href="i-002.jpg"><span><img src="i-002.jpg" alt="Galeria 111" /></span></a></li>
+		<li><a href="i-003.jpg"><span><img src="i-003.jpg" alt="Galeria 111" /></span></a></li>
+		<li><a href="i-004.jpg"><span><img src="i-004.jpg" alt="Galeria 111" /></span></a></li>
+		<li><a href="i-005.jpg"><span><img src="i-005.jpg" alt="Galeria 111" /></span></a></li>
+		<li><a href="i-006.jpg"><span><img src="i-006.jpg" alt="Galeria 111" /></span></a></li>
+		<li><a href="i-007.jpg"><span><img src="i-007.jpg" alt="Galeria 111" /></span></a></li>
+		<li><a href="i-008.jpg"><span><img src="i-008.jpg" alt="Galeria 111" /></span></a></li>
+		<li><a href="i-009.jpg"><span><img src="i-009.jpg" alt="Galeria 111" /></span></a></li>
+		<li><a href="i-010.jpg"><span><img src="i-010.jpg" alt="Galeria 111" /></span></a></li>
+		<li><a href="i-011.jpg"><span><img src="i-011.jpg" alt="Galeria 111" /></span></a></li>
+		<li><a href="i-012.jpg"><span><img src="i-012.jpg" alt="Galeria 111" /></span></a></li>
+	</ul>
+	
+</div>	
+
+	
+
+</body>
+</html>
